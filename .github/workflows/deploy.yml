@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: "20"
           cache: 'npm'
-          # Ajustado para o novo caminho da pasta
+          # Caminho atualizado para a sua pasta principal
           cache-dependency-path: './sergio_perfil/package-lock.json'
       - name: Install dependencies
         run: npm install
@@ -28,7 +28,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Caminho da pasta de exportação estática
+          # Pasta onde o Next.js gera o site estático
           path: ./sergio_perfil/out
   deploy:
     environment:
