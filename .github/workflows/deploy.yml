@@ -17,17 +17,19 @@ jobs:
         with:
           node-version: "20"
           cache: 'npm'
-          cache-dependency-path: './sergin-portfolio/package-lock.json'
+          # Ajustado para o novo caminho da pasta
+          cache-dependency-path: './sergio_perfil/package-lock.json'
       - name: Install dependencies
         run: npm install
-        working-directory: ./sergin-portfolio
+        working-directory: ./sergio_perfil
       - name: Build with Next.js
         run: npm run build
-        working-directory: ./sergin-portfolio
+        working-directory: ./sergio_perfil
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./sergin-portfolio/out
+          # Caminho da pasta de exportação estática
+          path: ./sergio_perfil/out
   deploy:
     environment:
       name: github-pages
