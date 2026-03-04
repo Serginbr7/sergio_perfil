@@ -1,8 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export', // Isso gera a pasta 'out' com o site pronto
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: 'export',
+  basePath: '/sergio_perfil',
   images: {
-    unoptimized: true, // Necessário para imagens funcionarem no GitHub Pages
+    unoptimized: true,
   },
 };
 
