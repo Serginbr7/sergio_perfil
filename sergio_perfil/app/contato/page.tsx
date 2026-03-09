@@ -14,7 +14,12 @@ export default function Contato() {
 
         <div className="grid gap-6">
           {/* WhatsApp */}
-          <a href="https://wa.me/5516994633370" target="_blank" className="flex items-center gap-6 p-6 bg-zinc-900/50 border border-zinc-800 rounded-2xl hover:border-blue-500/50 transition-all">
+          <a
+            href="https://wa.me/5516994633370"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-6 p-6 bg-zinc-900/50 border border-zinc-800 rounded-2xl hover:border-blue-500/50 transition-all"
+          >
             <div className="bg-blue-500/10 p-4 rounded-full text-blue-500">
               <Smartphone size={24} />
             </div>
@@ -37,12 +42,15 @@ export default function Contato() {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/sérgio-henrique-da-silva-3a5404238/"
+            href="https://www.linkedin.com/in/sergio-henrique-da-silva-3a5404238/"
             target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-6 p-6 bg-zinc-900/50 border border-zinc-800 rounded-2xl hover:border-blue-500/50 transition-all group"
           >
             <div className="bg-blue-500/10 p-4 rounded-full text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-all">
-              <Linkedin size={24} />
+              <div className="flex items-center justify-center">
+                <Linkedin size={24} />
+              </div>
             </div>
             <div>
               <h3 className="font-bold">LinkedIn</h3>
