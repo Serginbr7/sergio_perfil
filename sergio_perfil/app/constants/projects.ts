@@ -31,5 +31,5 @@ export const PROJECTS = [
     link: "#",
     type: "Dev"
   }
-  {}
+  
 ];
